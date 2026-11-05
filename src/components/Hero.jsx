@@ -7,7 +7,11 @@ const warnMissing = () =>
 
 export default function Hero() {
   return (
-    <section className="hero" aria-label="Wedding invitation artwork">
+    <section
+      className="hero"
+      aria-label="Wedding invitation artwork"
+      style={{ '--hero-art': `url(${assets.invitationArt})` }}
+    >
       <div className="hero-art">
         <img
           src={assets.invitationArt}

@@ -1,36 +1,46 @@
+/* Full-screen hero: the invitation art fills the whole viewport. */
 .hero {
-  min-height: 100svh;
-  display: grid;
-  place-items: center;
-  padding: 70px 20px 40px;
-  background: linear-gradient(180deg, #f7eee8, #fdf9f5);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  background: #f7eee8;
+}
+
+/* Soft blurred copy of the artwork fills any side space on wide screens. */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -30px;
+  background: var(--hero-art) center / cover no-repeat;
+  filter: blur(28px) saturate(1.05);
+  opacity: 0.85;
 }
 
 .hero-art {
-  width: min(760px, 86vw);
-  height: min(1050px, calc(100svh - 100px));
-  display: grid;
-  /* pin the single grid cell to the box size, so a tall portrait image is
-     fitted inside it (object-fit: contain) instead of stretching the box */
-  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
-  place-items: center;
-  overflow: hidden;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .hero-art img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: contain; /* wide screens: whole card visible, full height */
+  object-position: center;
   display: block;
 }
 
-@media (max-width: 800px) {
-  .hero {
-    min-height: 82svh;
-  }
-
-  .hero-art {
-    height: 75svh;
-    width: 94vw;
+/* Portrait / phone screens: edge-to-edge, true full screen. */
+@media (max-aspect-ratio: 4/5) {
+  .hero-art img {
+    object-fit: cover;
+    object-position: center top;
   }
 }

@@ -12,27 +12,22 @@ npm run build      # outputs dist/
 npm run preview    # serve the production build locally
 ```
 
-## Assets (important)
+## Assets
 
-The source ZIP contained **no image or audio files** — the original page hotlinked them from
-`card-olive-pi.vercel.app`. `npm run assets` downloads them into `public/assets/` under clean names
-(existing files are never overwritten):
+Already included in `public/assets/`:
 
-| Local file (`public/assets/`) | Original file on the reference site | Used for |
-| --- | --- | --- |
-| `invitation-art.png` | `Blush and Gold Wedding Invitation.png` | Hero artwork |
-| `mehndi.png` | `Mahndi.png` | Mehndi card background |
-| `barat.png` | `Barat.png` | Barat card background |
-| `walima.png` | `Walima.png` | Walima card background |
-| `alfaaz.mp3` | `Alfaaz (Lyrics) - Hamza Malik & Zain Zohaib … (mp3cut.net).mp3` | Background music |
+| File | Used for |
+| --- | --- |
+| `invitation-art.png` | Hero invitation card (shown when the envelope opens) |
+| `mehndi.png` | Mehndi card background (marigold garlands) |
+| `barat.png` | Barat card background (pink roses) |
+| `walima.png` | Walima card background (green florals) |
 
-**Check the hero artwork.** The reference site currently shows another couple's names. If
-`invitation-art.png` has those names printed into the image, replace it with your own artwork
-(same filename, ideally the same proportions). Event-card backgrounds sit under a 76–82 % cream wash,
-so they can be swapped the same way.
+**Still needed: `alfaaz.mp3`.** The background music was never included in the source files. Either run
+`npm run assets` (downloads it from the original site) or save the file yourself as
+`public/assets/alfaaz.mp3`. Until then the music button shows "Music unavailable" and everything else works.
 
-Until the files exist the site still loads: event cards show the cream wash only, and the music button
-reports "Music unavailable". The browser console says which file is missing.
+To swap any image, replace the file in `public/assets/` and keep the same filename.
 
 ## Project structure
 

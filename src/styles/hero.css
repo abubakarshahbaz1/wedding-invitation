@@ -10,6 +10,9 @@
   width: min(760px, 86vw);
   height: min(1050px, calc(100svh - 100px));
   display: grid;
+  /* pin the single grid cell to the box size, so a tall portrait image is
+     fitted inside it (object-fit: contain) instead of stretching the box */
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
   place-items: center;
   overflow: hidden;
 }

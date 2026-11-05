@@ -14,22 +14,23 @@
   flex-direction: column;
   align-items: flex-start;
   background-size: cover;
-  background-position: center;
+  /* the corner florals sit top-right in the artwork; keep them in view at every card size */
+  background-position: top right;
   border: 1px solid #e3d2c4;
   box-shadow: 0 12px 30px #785a4510;
 }
 
-/* Backgrounds: original artwork in public/assets, under the same cream wash as the original. */
+/* Backgrounds: artwork in public/assets under a light cream wash (keeps the text readable). */
 .event-card.mehndi {
-  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.76), rgba(255, 248, 243, 0.82)), url("/assets/mehndi.png");
+  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.12), rgba(255, 248, 243, 0.2)), url("/assets/mehndi.png");
 }
 
 .event-card.barat {
-  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.76), rgba(255, 248, 243, 0.82)), url("/assets/barat.png");
+  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.12), rgba(255, 248, 243, 0.2)), url("/assets/barat.png");
 }
 
 .event-card.walima {
-  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.76), rgba(255, 248, 243, 0.82)), url("/assets/walima.png");
+  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.12), rgba(255, 248, 243, 0.2)), url("/assets/walima.png");
 }
 
 .event-number {

@@ -1,0 +1,29 @@
+.closing {
+  text-align: center;
+  padding: 110px 20px 90px;
+  background: #fbf6f1;
+}
+
+.closing-flower {
+  display: block;
+  color: #b89372;
+  font-size: 29px;
+  margin-bottom: 24px;
+}
+
+.closing h2 {
+  font-size: clamp(48px, 7vw, 76px);
+}
+
+.closing > p {
+  font: italic 21px "Cormorant Garamond", serif;
+  color: #927765;
+  margin: 25px 0 48px;
+}
+
+.closing-date {
+  width: min(550px, 94vw);
+  margin: auto;
+  border-top: 1px solid #e0cfc1;
+  padding-top: 30px;
+}

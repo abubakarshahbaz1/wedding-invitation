@@ -1,0 +1,11 @@
+.invitation {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.invitation-locked {
+  opacity: 0;
+  pointer-events: none;
+  height: 100vh;
+  overflow: hidden;
+}

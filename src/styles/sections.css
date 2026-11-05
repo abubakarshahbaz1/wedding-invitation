@@ -1,0 +1,63 @@
+/* Shared section chrome: date + events sections, headings, eyebrow, ornament. */
+.date-section,
+.events-section {
+  text-align: center;
+  padding: 115px 24px 105px;
+  position: relative;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #a1846d;
+  margin-bottom: 19px;
+}
+
+.section-heading h2,
+.closing h2 {
+  font: 400 clamp(42px, 6vw, 68px) / 0.98 "Cormorant Garamond", serif;
+  margin: 0;
+  color: #5b4840;
+}
+
+.section-heading h2 em,
+.closing h2 em {
+  font-weight: 400;
+  color: #ad8767;
+}
+
+.section-heading p {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #907e74;
+  margin: 22px 0 0;
+}
+
+.section-ornament {
+  display: block;
+  margin: 50px auto 0;
+  color: #b18d6e;
+  font-size: 23px;
+}
+
+.events-section {
+  background: #f5eae3;
+}
+
+@media (max-width: 800px) {
+  .date-section,
+  .events-section {
+    padding: 85px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+}

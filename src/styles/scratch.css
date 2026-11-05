@@ -1,0 +1,85 @@
+.scratch-card {
+  width: min(530px, 90vw);
+  height: 220px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #d9c4b1;
+  background: #f8eee6;
+  box-shadow: 0 12px 35px #8a69511a;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.scratch-under {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  color: #8e705c;
+}
+
+.scratch-under span,
+.scratch-under small {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.scratch-under strong {
+  font: 500 42px "Cormorant Garamond", serif;
+  color: #765947;
+}
+
+.scratch-under small {
+  font-size: 9px;
+  color: #a18a7a;
+}
+
+.scratch-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+.scratch-overlay.revealed {
+  opacity: 0;
+  transition: opacity 0.65s;
+}
+
+.scratch-hint {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 3px #715a49;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.scratch-hint.revealed {
+  opacity: 0;
+}
+
+.scratch-hint span {
+  color: #f7dfbd;
+  margin: 0 8px;
+}
+
+@media (max-width: 480px) {
+  .scratch-card {
+    height: 190px;
+  }
+
+  .scratch-under strong {
+    font-size: 35px;
+  }
+}

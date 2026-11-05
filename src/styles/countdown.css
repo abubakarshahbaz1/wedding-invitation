@@ -1,0 +1,29 @@
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.countdown-unit strong {
+  font: 500 36px "Cormorant Garamond", serif;
+  color: #765b49;
+}
+
+.countdown-unit span {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a18b7d;
+}
+
+@media (max-width: 480px) {
+  .countdown-unit strong {
+    font-size: 30px;
+  }
+}

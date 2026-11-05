@@ -1,0 +1,24 @@
+.footer {
+  padding: 27px 24px;
+  background: #eee0d6;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  color: #927b6b;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+.footer a {
+  color: #795f4e;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

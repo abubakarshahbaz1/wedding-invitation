@@ -11,7 +11,7 @@ export default function Countdown({ target }) {
   const timeLeft = useCountdown(target);
 
   return (
-    <div className="countdown" role="timer" aria-label="Countdown to Mehndi">
+    <div className="countdown" role="timer" aria-label="Countdown to Walima">
       {UNITS.map(([key, label]) => (
         <div className="countdown-unit" key={key}>
           <strong>{timeLeft[key]}</strong>

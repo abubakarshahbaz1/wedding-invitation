@@ -21,14 +21,6 @@
 }
 
 /* Backgrounds: artwork in public/assets under a light cream wash (keeps the text readable). */
-.event-card.mehndi {
-  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.12), rgba(255, 248, 243, 0.2)), url("/assets/mehndi.png");
-}
-
-.event-card.barat {
-  background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.12), rgba(255, 248, 243, 0.2)), url("/assets/barat.png");
-}
-
 .event-card.walima {
   background-image: linear-gradient(135deg, rgba(255, 248, 243, 0.12), rgba(255, 248, 243, 0.2)), url("/assets/walima.png");
 }

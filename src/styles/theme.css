@@ -37,3 +37,9 @@
 .countdown-unit strong {
   color: #5f4638;
 }
+
+/* Single event card: centred instead of sitting in the first of three columns */
+.event-grid {
+  grid-template-columns: minmax(0, 400px);
+  justify-content: center;
+}

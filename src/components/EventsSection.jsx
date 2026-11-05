@@ -6,7 +6,7 @@ export default function EventsSection() {
   return (
     <section className="events-section" id="celebrations">
       <SectionHeading
-        eyebrow="Three days, one beautiful beginning"
+        eyebrow="One beautiful beginning"
         title={
           <>
             Come celebrate <em>with us</em>

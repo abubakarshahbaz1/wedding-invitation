@@ -36,23 +36,3 @@ button {
     transition: none !important;
   }
 }
-
-/* Elegant bold headings across the whole invitation */
-h1, h2, h3, h4,
-.section-heading h2,
-.closing h2,
-.event-card h3,
-.letter-names,
-.countdown-unit strong,
-.scratch-under strong {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
-h1 em, h2 em, h3 em, h4 em,
-.section-heading h2 em,
-.closing h2 em,
-.letter-names i {
-  font-weight: 700;
-}

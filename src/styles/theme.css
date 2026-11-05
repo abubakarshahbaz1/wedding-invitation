@@ -1,0 +1,39 @@
+/* Loaded last so it wins over earlier rules. */
+
+/* Pattern background (blush with soft flowers + rings) on every section after the hero */
+.date-section,
+.events-section,
+.closing {
+  background-color: #f2dfd4;
+  background-image: url("/assets/bg-pattern.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Bold, elegant headings */
+.section-heading h2,
+.closing h2,
+.event-card h3,
+.letter-names,
+.countdown-unit strong,
+.scratch-under strong {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+}
+
+.section-heading h2 em,
+.closing h2 em,
+.letter-names i {
+  font-weight: 700;
+}
+
+.section-heading h2,
+.closing h2 {
+  color: #4f3b32;
+  letter-spacing: 0.005em;
+}
+
+.countdown-unit strong {
+  color: #5f4638;
+}

@@ -18,9 +18,7 @@ Already included in `public/assets/`:
 
 | File | Used for |
 | --- | --- |
-| `invitation-art.png` | Hero invitation card (shown when the envelope opens) |
-| `mehndi.png` | Mehndi card background (marigold garlands) |
-| `barat.png` | Barat card background (pink roses) |
+| `invitation-art-6dec.png` | Hero invitation card (shown when the envelope opens) |
 | `walima.png` | Walima card background (green florals) |
 
 **Still needed: `alfaaz.mp3`.** The background music was never included in the source files. Either run

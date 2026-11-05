@@ -7,7 +7,7 @@ export const couple = {
 
 // Local files live in public/assets (run `npm run assets` to download the originals).
 export const assets = {
-  invitationArt: '/assets/invitation-art.png',
+  invitationArt: '/assets/invitation-art-6dec.png',
   music: '/assets/alfaaz.mp3',
   eventBackgrounds: {
     walima: '/assets/walima.png',

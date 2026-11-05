@@ -14,9 +14,6 @@ const OUT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../p
 
 // local filename  ->  original file on the reference site
 const FILES = {
-  'invitation-art.png': 'Blush and Gold Wedding Invitation.png',
-  'mehndi.png': 'Mahndi.png',
-  'barat.png': 'Barat.png',
   'walima.png': 'Walima.png',
   'alfaaz.mp3': 'Alfaaz (Lyrics) - Hamza Malik & Zain Zohaib [zO0y9LR9kpE] (mp3cut.net).mp3',
 };
